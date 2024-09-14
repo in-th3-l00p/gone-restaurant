@@ -5,7 +5,7 @@
     <main class="flex h-screen w-screen">
         <x-sidebar/>
 
-        <section class="p-16 flex-grow">
+        <section class="p-16 flex-grow overflow-y-scroll">
             <div class="space-y-2 mb-8">
                 <h1 class="text-5xl font-semibold">Dishes</h1>
                 <p>Listing of all the dishes being sold right now</p>
