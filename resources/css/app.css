@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.button {
+    @apply bg-orange-700 px-4 py-2 text-white rounded-md shadow-md;
+}
+
+.input {
+    @apply p-2 bg-white border rounded-md shadow-md w-full;
+}
+
+/*.euro {*/
+/*    @apply !ps-8 relative;*/
+/*}*/
+
+/*.euro::before {*/
+/*    content: '€';*/
+/*    color: black;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 0;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    background-color: red;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+
+.form-group {
+    @apply flex items-start gap-4;
+}
+
+.form-group > label {
+    @apply w-32 pt-2;
+}
