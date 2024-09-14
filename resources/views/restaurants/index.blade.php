@@ -34,7 +34,7 @@
                             >
                                 Edit
                             </a>
-                            <form action="{{ route("$restaurants.destroy", [ "restaurant" => $restaurant ]) }}" method="post">
+                            <form action="{{ route("restaurants.destroy", [ "restaurant" => $restaurant ]) }}" method="post">
                                 @csrf
                                 @method("DELETE")
 
