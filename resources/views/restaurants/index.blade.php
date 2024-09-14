@@ -5,13 +5,13 @@
     <main class="flex h-screen w-screen">
         <x-sidebar/>
 
-        <section class="p-16 flex-grow">
+        <section class="p-16 flex-grow overflow-y-scroll">
             <div class="space-y-2 mb-8">
                 <h1 class="text-5xl font-semibold">Restaurants</h1>
                 <p>Listing of all the restaurants showed on the website right now</p>
             </div>
 
-            <div class="max-w-2xl flex flex-col gap-8 overflow-y-scroll">
+            <div class="max-w-2xl flex flex-col gap-8">
                 @forelse($restaurants as $restaurant)
                     <div class="p-4 rounded-md shadow-md bg-white w-full flex gap-8">
                         <img
