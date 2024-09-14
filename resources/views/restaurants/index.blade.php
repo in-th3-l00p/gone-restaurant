@@ -34,12 +34,17 @@
                             >
                                 Edit
                             </a>
-                            <a
-                                href="{{ route("restaurants.destroy", [ "restaurant" => $restaurant ]) }}"
-                                class="button w-full text-center"
-                            >
-                                Delete
-                            </a>
+                            <form action="{{ route("$restaurants.destroy", [ "restaurant" => $restaurant ]) }}" method="post">
+                                @csrf
+                                @method("DELETE")
+
+                                <button
+                                    type="submit"
+                                    class="button w-full text-center"
+                                >
+                                    Delete
+                                </button>
+                            </form>
                         </div>
                     </div>
                 @empty
