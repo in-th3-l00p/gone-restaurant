@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DishController;
+use App\Http\Controllers\RestaurantController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,7 @@ Route::get("/logout", [AuthController::class, "logout"])->name("logout");
 Route::middleware("auth")
     ->resource("dishes", DishController::class)
     ->except([ "show" ]);
+Route::middleware("auth")
+    ->resource("restaurants", RestaurantController::class)
+    ->except([ "show" ]);
+

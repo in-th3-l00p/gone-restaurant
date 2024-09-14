@@ -19,13 +19,35 @@
         <a
             href="{{ route("dishes.create") }}"
             @class([
-                "w-full px-8 py-2 text-lg mb-auto text-center",
+                "w-full px-8 py-2 text-lg text-center",
                 Route::current()->getName() === "dishes.create" ?
                     "bg-white text-orange-700" :
                     "bg-transparent text-white"
             ])
         >
             Add a dish
+        </a>
+        <a
+            href="{{ route("restaurants.index") }}"
+            @class([
+                "w-full px-8 py-2 text-lg text-center",
+                Route::current()->getName() === "restaurants.index" ?
+                    "bg-white text-orange-700" :
+                    "bg-transparent text-white"
+            ])
+        >
+            Restaurants
+        </a>
+        <a
+            href="{{ route("restaurants.create") }}"
+            @class([
+                "w-full px-8 py-2 text-lg mb-auto text-center",
+                Route::current()->getName() === "restaurants.create" ?
+                    "bg-white text-orange-700" :
+                    "bg-transparent text-white"
+            ])
+        >
+            Add a restaurants
         </a>
         <a
             href="{{ route("logout") }}"
